@@ -77,7 +77,7 @@ while True:
             continue
 
         try:
-            _, data = line
+            _, data = line.split()
         except:
             q.put('! invalid args')
             continue
